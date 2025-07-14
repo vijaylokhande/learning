@@ -1,0 +1,141 @@
+4. Triple-Nested Dictionary & Graph Traversal
+Problem: Given a complex data structure—three-level nested dictionaries representing nodes and edges—perform graph operations such as pathfinding or cycle detection.
+
+11. Flight Route and Cost Finder
+Problem: Given a string of flight records `"SRC:DST:Airline:Cost,..."
+
+Part 1: Return the direct cost between two cities.
+
+Part 2: If no direct flight exists, find a valid route (e.g., US→UK→FR), return { route: "...", method: "...", cost: total }.
+
+12. Generic String Parsing (CSV‑like)
+Problem: Parse delimited strings (like CSV) into structured components. Handle edge cases such as escaped delimiters and trimming whitespace.
+
+
+19. Payment Tracking System
+Problem: Implement a system to track payments: recording transactions, checking statuses, reconciling totals, etc., based on a set of business rules.
+
+24. Accounts & Banks Transaction Validator
+Problem: Given time-stamped operations (deposits, withdrawals) across multiple accounts and banks, simulate transactions and determine validity based on conditions like sufficient funds, daily limits, etc.
+
+25. Matching Pairs in Array (Dense Description)
+Problem: Given an array of elements, find matching pairs (by value or other criteria), possibly returning index pairs. The narrative may be verbose but underlying logic is simple.
+
+26. String Existence with Twist
+Problem: Given a target string and an array of strings, check existence but with added complexity (like partial match, fuzzy match, or wildcard matching).
+
+(TODO)
+28. Server‑Status Time Analysis (Nested Segments)
+Problem:
+
+Part A: Given a sequence of "0/1" statuses and an offline timestamp, count mismatches (e.g., how long server was incorrectly marked).
+
+Part B: Given nested segments (e.g., "BEGIN ... END"), find optimal offline time per segment.
+
+
+31. HTML Parser
+Problem: Implement a parser that extracts text (and possibly structure) from an HTML string. Handle nested tags, attributes, and escaped characters.
+-------------
+(done)
+23. Scalable API Rate Limiter Design
+Problem: Similar to #13, but at scale: design an API rate limiting system that can be distributed across servers and handle high throughput.
+
+
+(done)
+13. API Rate Limiter (Per‑User, 100 requests/min)
+Problem: Design and implement a rate limiter that restricts each user to 100 API requests per minute. Ensure thread-safety and efficiency.
+(done)
+1. Balance and Transactions with Fees
+Problem: Given an initial balance and a list of transactions (e.g., deposits or withdrawals) with associated fee structures, calculate the final balance after all fees have been deducted.
+(done)
+2. Server Allocation / Deallocation Manager
+Problem: Implement a system to dynamically allocate and deallocate server instances. It should support operations like allocate() (returning a new server ID) and release(serverID).
+
+(done)
+3. Receipt Price Calculator
+Problem: Given a list of purchased items and their unit costs, calculate the total price of a receipt. Optionally, adjust for quantity and apply any discounts or taxes.
+(done)
+15. Word Search
+Problem: Solve the classic problem: given a 2D board of letters and a word, determine whether the word exists in the grid via adjacent moves. (LeetCode “Word Search”)
+
+(done)
+8. Accept‑Language Header Parser
+Problem: Write a function:
+parse_accept_language(header: str, supported: Set[str]) -> List[str]
+That takes a header like "en-US, fr-CA, fr-FR" and returns the supported languages in preference order (e.g., ["en-US", "fr-FR"]).
+
+(done)
+9. Invoice Reminder Subject Lines
+Problem: Given an invoice date and a schedule of reminders (e.g., 10 days before, on due date, 20 days after), generate and return the subject lines for each scheduled email, in chronological order.
+(done)
+5. Currency Conversion Across Exchange Rates (LeetCode “Evaluate Division”–style)
+Problem: Given a list of exchange rates between currency pairs and a source–target currency pair, compute the conversion rate. Handle cases without direct rates (via intermediate currencies).
+
+(done)
+6. Java String Parser
+Problem: Design and implement a custom parser in Java that reads structured input (e.g., "key1:value1;key2:value2") and returns a usable data structure.
+
+(done)
+14. Product Pricing with Quantity‑Based Tiers
+Problem: Given an array of products and a pricing map (unit price), compute total cost. Then extend the pricing logic to handle quantity discounts or tiered pricing.
+
+(done)
+22. Tiered Pricing Offer
+Problem: Given tiered pricing (e.g., $5 each for 1–10 units, $4 after 10 units), implement a function to calculate total cost based on quantity tiers.
+
+(done)
+18. Transaction CSV Summarizer
+Problem: Given CSV input with columns [transaction_type, currency, date, amount], implement a function to sum amounts grouped by date and transaction_type.
+
+(done)
+29. Simplified Store Log Penalty
+Problem: Given a string of "Y/N" (customers or none) and an integer closing time, compute penalty: +1 for "open with no customers" or "closed when customers could be present." Then optimize further in a follow-up.
+
+(done)
+
+27. Store‑Log Based Penalty & Closing‑Time Optimization
+Problem:
+
+Part 1: Given logs of “store open/closed times” and “customers present/absent,” compute a penalty score.
+
+Part 2: Find the optimal closing time to minimize penalty.
+
+Part 3: Extend logic to handle incomplete or invalid logs.
+
+(done)
+30. Object‑Oriented Design: Store‑Closing Time
+Problem: Design classes and methods to determine the best store closing time by analyzing customer visits and operating hours.
+
+
+(done)
+21. Currency Conversion with Direct and Indirect Rates
+Problem: Given a string of currency pairs with rates ("USD:CAD:0.74,AUD:CAD:0.72"), write:
+
+A converter to compute amount from one currency to another.
+
+A follow-up for multi-hop conversion if no direct rate exists.
+
+
+(done)
+20. Timestamp‑Prefixed String Sorting & Transformation
+Problem: Given an array of strings with timestamp prefixes, strip certain parts, add words, sort by timestamp, then optimize the implementation. Include test cases.
+
+
+(done)
+16. Shipping Cost Aggregation (JSON)
+Problem: Similar to #10: given JSON data with shipping cost per country and product quantity, compute total shipping costs for each product or order.
+
+(done)
+
+10. JSON Shipping‑Cost Operations by Country
+Problem: Given a JSON object mapping countries to items and shipping costs, implement functions to query and manipulate shipping-cost data (e.g., update, retrieve average cost, etc.).
+
+(done)
+17. Bracket Expression Expansion (String Manipulation)
+Problem: Given a shorthand string expression with brackets (e.g., a[bc]d or more complex), expand it into all valid combinations.
+(Example: from Bracket Expansion problem)
+
+(done)
+7. Load Balancer & Ledger Design
+Problem: Implement a load balancer algorithm (e.g., round-robin, weighted) and maintain a ledger of requests served by each server instance.
+

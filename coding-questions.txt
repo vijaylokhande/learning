@@ -1,0 +1,38 @@
+https://www.codinginterview.com/guide/stripe-interview-questions/
+
+1) given balances and transactions, calculate the amount of money remaining after the fees are taken out
+2) Writing a program to allocate and deallocate servers.
+3) A question about calculating the price of a receipt given cost of each item.
+4) Triple dictionary + graph problem on top of the dictionary
+5) Given a list of currency exchange rates, how will you convert the source currency to destination currency. Something similar to 'Evaluate Division' on Leetcode
+6) Build a string parser in java
+7) Implement a load balancer - design a ledger system
+8) Part 1 In an HTTP request, the Accept-Language header describes the list of languages that the requester would like content to be returned in. The header takes the form of a comma-separated list of language tags. For example: Accept-Language: en-US, fr-CA, fr-FR means that the reader would accept: 1. English as spoken in the United States (most preferred) 2. French as spoken in Canada 3. French as spoken in France (least preferred) We're writing a server that needs to return content in an acceptable language for the requester, and we want to make use of this header. Our server doesn't support every possible language that might be requested (yet!), but there is a set of languages that we do support. Write a function that receives two arguments: an Accept-Language header value as a string and a set of supported languages, and returns the list of language tags that will work for the request. The language tags should be returned in descending order of preference (the same order as they appeared in the header). In addition to writing this function, you should use tests to demonstrate that it's correct, either via an existing testing system or one you create. Examples: parse_accept_language( "en-US, fr-CA, fr-FR", # the client's Accept-Language header, a string ["fr-FR", "en-US"] # the server's supported languages, a set of strings ) returns: ["en-US", "fr-FR"] parse_accept_language("fr-CA, fr-FR", ["en-US", "fr-FR"]) returns: ["fr-FR"] parse_accept_language("en-US", ["en-US", "fr-CA"]) returns: ["en-US"]
+9) For this question, you will be outputting the subject line of each email we send for customers' invoices in sorted order. (Use any library/tool for sorting). Your invoicing system will need to be able to configure a reminder schedule. For example, you might want to send one email 10 days before the invoice comes out, one email when the invoice comes out, one email 20 days after the invoice comes out, and one email when the invoice is due, which is 30 days from when the invoice first came out.
+10) Different operations on JSON object with countries and items with shipping costs
+11) Given an input string: "UK:US:FedEx:4,UK:FR:Jet1:2,US:UK:RyanAir:8,CA:UK:CanadaAir:8" Which represents flights between destinations in the format: "Source:Destination:Airline:Cost,..." Write a function which will take a Source and Destination and output the cost.
+(Building from the first question) Write a function which will take an Input String, Source and Destination that have no direct connecting flight, and output a route that you can take to reach the destination. The output should be in the format: return {'route': 'US -> UK -> FR', 'method': 'RyanAir -> Jet1', 'cost': 10}
+12) You need to be able to do string parsing. Think of it as almost being like a csv
+13) Design a rate limiter for an API that can handle 100 requests per minute for each unique user
+14) I was given an array of products and a pricing map and then first part was to calculate total price for the products then second part was a change in the pricing map that the price depends on the quantities
+15) One problem they asked in technical onsite: https://leetcode.com/problems/word-search/description/
+16) Had to solve some data engineering questions, related to calculating the total cost of shipping various quantities of products using a json object containing information on shipping cost by country. 
+17) For coding round I got a string manipulation question - tquest.me/question/Bracket-Expansion
+18) Technical screening, Asked 2 questions based on CSV input and where the columns named transaction type, currency, date, amount and you need to sum up all the amount for a given date and transaction type
+19) I was asked to code a payment tracking system based on an arbitrary specification.
+20) Take an array of strings, remove parts of the strings and add words to them, sort by a (strangely formatted) timestamp at the beginning of the string, then make it more performant. Add any additional tests cases. There could be other steps they would add after this as it's a layered problem and they just give you a little at a time.
+21) Given a string that has currency "USD:CAD:074,AUD:CAD" as a data, then I was told to write a function would take two input currency string and a number(value in first currency) and then determine the value of number in the second currency The follow up questions was Given same data above, write a function that would take two currency string, and a number and the fine the value of that number
+22) Question about tiered price offer
+23) design API rate limiter and scale
+24) Given a sequence of strings representing deposits, withdrawals, etc. between accounts and banks at specific timestamps, determine whether the operations were successful depending on multiple conditions.
+25) basic finding some matching pairs from an array, and manipulating the indexes but the problem itself was written in 500+ words with lots of irrelevant fillers that made it more confusing than it actually was.
+26) Basically write a function that takes a string, and an array of strings and tells you if that string is in the array. Not quite that easy, but that's the general gist of it.
+27) The technical screening was a three part question, each part building on the previous question. 1. Given a store log which includes closing times and whether or not customers were present, calculate a penalty score (i.e. add to the penalty score if customers were present after the store was closed or if no customers were present while the store was open). 2. Find the best closing time. 3. Given an incomplete log with possibly invalid data , find the best closing time for all logs.
+28) The question was very long and convoluted, but it essentially came to this: 1a) "Given a string of server-statuses ("1 0 0 1") and a time that the server was taken offline, determine how many statuses the server was off by. 0 indicates the server is running, 1 indicates the server is offline" 1b) "Given the previous, determine when the best time would have been to take the server offline. " 2a) "Ok given a string with multiple server statuses nested together, determine the best time to take the server offline" example strings were like "BEGIN BEGIN 0 0 1 END BEGIN 0 1 END", but only for the inner-most BEGIN/END combinations."
+29) The problem was this: Given a string of store logs with Y as customers in the store and N as no customers “Y N N Y” for example and a closing time (int) determine total penalty. +1 penalty for every hr open with N customers. +1 for every hr closed when there could’ve been customers. Pretty simple, divide array into 2 halves based on the closing time and calculate penalties. Second half was built upon this.
+30) OOD, best time to close the shop.
+
+
+
+
+
